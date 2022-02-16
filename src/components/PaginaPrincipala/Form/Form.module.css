@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=PT+Sans&display=swap");
+body {
+  margin: 0px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 150px;
+  width: 100vw;
+}
+
+.formBox {
+  position: relative;
+  z-index: 101;
+  background-color: rgb(238, 176, 122);
+  border-radius: 16px;
+  padding: 1rem;
+  min-width: 50%;
+  width: 60%;
+  max-width: 60%;
+}
+
+.formBoxBehind {
+  display: none;
+}
+
+.formBox h1 {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.form {
+  position: relative;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  margin: 8px 0;
+  padding: 0.5rem;
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+}
+
+.phone {
+  margin: 8px 0;
+  padding: 0.5rem;
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+}
+
+.adress {
+  margin: 8px 0;
+  padding: 0.5rem;
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+}
+
+.email {
+  margin: 8px 0;
+  padding: 0.5rem;
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+}
+
+.inputAttention {
+  color: red;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.invalidInput {
+  margin: 8px 0;
+  padding: 0.5rem;
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+  border-width: 2.2px;
+  border-color: red;
+}
+
+/* .form input:not([id="reason"]) {
+  margin: 8px 0;
+  padding: 0.5rem;
+  min-width: 70%;
+  width: 80%;
+  max-width: 90%;
+} */
+
+.specialInput {
+  padding: 1.2rem;
+  margin: 8px 0;
+  width: 80%;
+}
+
+.trueButton {
+  margin: 8px 0;
+  padding: 0.4rem;
+  border-color: rgb(238, 176, 122);
+  align-self: flex-end;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.buttonDisplayNone{
+  display: none;
+}
+
+.form .trueButton:hover {
+  background-color: black;
+  color: #ccc;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+.falseButton {
+  margin: 8px 0;
+  padding: 0.4rem;
+  border-color: rgb(238, 176, 122);
+  align-self: flex-end;
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.popPara {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(81, 143, 81);
+  padding: 1rem;
+  border-radius: 20px;
+  font-family: "Festive", sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 170px;
+}
+
+.popButton {
+  padding: 0.3rem;
+  align-self: flex-end;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: "Festive", sans-serif;
+  font-weight: bold;
+}
+
+.popButton:hover {
+  background-color: black;
+  color: #ccc;
+}
+
+.containerPara {
+  position: absolute;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  /* font-style: "Festive", sans-serif */
+
+}
+
+
+@media (max-width:40rem){
+  .container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 100px;
+    width: 100vw;
+  }
+
+  .formBox h1 {
+    font-size: 1rem;
+  }
+
+  .containerPara {
+    position: relative;
+    bottom:0px;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .inputAttention {
+    color: red;
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  .error {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 200px;
+  width: 100vw;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background-color: rgb(238, 176, 122);
+  z-index: 120;
+  width: 50%;
+  max-width: 60%;
+  height:45vh;
+}
+
+.box h1 {
+  font-size: 1.8rem;
+  padding: 1rem;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+.box p {
+  padding: 1rem;
+  text-align: center;
+  margin: 0 6px 6px 6px;
+  font-size: 1.5rem;
+  font-family: "Italianno", sans-serif;
+}
+
+@media (max-width:40rem){
+  .container{
+    bottom: 100px;
+    height: 50vh;
+    width: 100vw;
+    /* max-width: 80%; */
+  }
+
+  .box h1{
+    position: relative;
+    top:15px;
+    font-size: 0.9rem;
+  }
+
+  .box p{
+    font-size: 0.9rem;
+  }
+}
